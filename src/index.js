@@ -9,6 +9,8 @@ function binarySearch(arr, val) {
       left++;
     } else if (middle < val) {
       right++;
+    } else {
+      return -1;
     }
   }
 }
