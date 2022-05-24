@@ -5,6 +5,10 @@ function binarySearch(arr, val) {
     let middle = (arr[left] + arr[right]) / 2;
     if (middle === val) {
       return middle;
-    } else if (middle )
+    } else if (middle > val) {
+      left++;
+    } else if (middle < val) {
+      right++;
+    }
   }
 }
