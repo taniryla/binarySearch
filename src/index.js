@@ -10,8 +10,9 @@ function binarySearch(arr, val) {
     }
     middle = Math.floor((left + right) / 2);
   }
- if (arr[middle] {
-   return middle;
- } else {
-   return -1;
+  if (arr[middle] === val) {
+    return middle;
+  } else {
+    return -1;
+  }
 }
