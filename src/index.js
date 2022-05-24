@@ -8,6 +8,7 @@ function binarySearch(arr, val) {
     } else {
       left = middle + 1;
     }
+    middle = Math.floor((left + right) / 2);
   }
   return -1;
 }
