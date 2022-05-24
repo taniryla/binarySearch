@@ -1,8 +1,8 @@
 function binarySearch(arr, val) {
   let left = 0;
   let right = arr.length - 1;
+  let middle = Math.floor((left + right) / 2);
   while (left < right) {
-    let middle = Math.floor(arr[left] + arr[right]) / 2 - 1;
     if (arr[middle] === val) {
       return middle;
     } else if (arr[middle] > val) {
